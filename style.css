@@ -1,0 +1,76 @@
+html {
+  box-sizing: border-box;
+  font-size: 10px;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  background: #ffc600;
+  font-family: "helvetica neue", sans-serif;
+  font-weight: 200;
+  font-size: 20px;
+}
+
+.container {
+  max-width: max-content;
+  margin: 50px auto;
+  text-align: center;
+}
+
+h1 {
+  margin: 0 1em 1em;
+  color: rgb(160, 7, 152);
+  text-shadow: 5px 5px 0 rgba(0, 0, 0, 0.1);
+}
+
+.words {
+  width: 100%;
+  background: white;
+  border-radius: 5px;
+  box-shadow: 10px 10px 0 rgba(0, 0, 0, 0.1);
+  padding: 1rem 2rem 1rem 5rem;
+  background: -webkit-gradient(
+      linear,
+      0 0,
+      0 100%,
+      from(#d9eaf3),
+      color-stop(4%, #fff)
+    )
+    0 4px;
+  background-size: 100% 3rem;
+  position: relative;
+  line-height: 3rem;
+  text-align: start;
+}
+
+p {
+  margin: 0 0 3rem;
+}
+
+.words:before {
+  content: "";
+  position: absolute;
+  width: 4px;
+  top: 0;
+  left: 30px;
+  bottom: 0;
+  border: 1px solid;
+  border-color: transparent #efe4e4;
+}
+
+button {
+  padding: 0.7em 3em;
+  margin: 3em 2em;
+  border: 2px solid black;
+  border-radius: 5px;
+  font-weight: 700;
+  font-size: 0.8em;
+  background-color: rgb(160, 7, 152);
+  color: #fff;
+  box-shadow: 10px 10px 0 rgba(0, 0, 0, 0.1);
+}
